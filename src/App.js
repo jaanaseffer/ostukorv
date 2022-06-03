@@ -1,14 +1,17 @@
-import './App.css';
 import Header from './components/Header';
-import Product from './components/Product';
+import Products from './components/Products';
 import Form from './components/Form';
+import data from './data';
 
 function App() {
+  const { products } = data;
   return (
     <div className="App">
       <Header></Header>
-      <Form></Form>
-      <Product></Product>
+      <div className="row">
+        <Form></Form>
+        <Products product={ products }></Products>
+      </div>
     </div>
   );
 }
