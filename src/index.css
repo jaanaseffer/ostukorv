@@ -26,6 +26,7 @@ a {
 .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .row.center {
@@ -37,18 +38,19 @@ a {
 }
 
 .col-2 {
-  flex: 2;
+  flex: 5;
 }
 
 .box {
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
   padding: 1rem;
   margin: .5rem;
   border-radius: .5rem;
 }
 
 img.smallImage {
-  max-height: 8rem;
+  max-width: 10rem;
+  max-height: 10rem;
 }
 
 button {
@@ -60,4 +62,19 @@ button {
   background-color: #f0c040;
   width: 100%;
   cursor: pointer;
+}
+
+.product {
+  margin: .5rem;
+  border-radius: .5rem;
+  border: .1rem #404040 solid;
+  box-shadow: .1rem .1rem .6rem #404040;
+  padding: .2rem;
+  width: 10rem;
+  background-color: #e0e0e0;
+}
+
+.remove {
+  display: flex;
+  justify-content: flex-end;
 }
